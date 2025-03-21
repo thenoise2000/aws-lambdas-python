@@ -34,8 +34,7 @@ resources:
         MasterUsername: ${env:DB_USER}
         MasterUserPassword: ${env:DB_PASSWORD}
         DBName: ${env:DB_NAME}
-        VPCSecurityGroups:
-          - !GetAtt MyDBSecurityGroup.GroupId
+        
     MyDBSecurityGroup:
       Type: AWS::EC2::SecurityGroup
       Properties:
